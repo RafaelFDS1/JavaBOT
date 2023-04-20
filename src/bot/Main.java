@@ -9,7 +9,7 @@ public class Main {
   private static JDA login;
   public static void main(String[] args) {
     try {
-      login = JDABuilder.createDefault("MTA5ODYwMjY4MzQ3NDEyNDkyMg.GAIg9y.bOk1RpDy3Jawaya5AxGOhipBmUAL-IdtpsFF8c")
+      login = JDABuilder.createDefault(args[0])
           .enableIntents(GatewayIntent.MESSAGE_CONTENT,
               GatewayIntent.GUILD_PRESENCES,
               GatewayIntent.GUILD_MEMBERS)
