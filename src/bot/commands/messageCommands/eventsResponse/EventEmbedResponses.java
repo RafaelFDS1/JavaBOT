@@ -16,7 +16,7 @@ public class EventEmbedResponses {
     return this.event;
   }
 
-  public void createGitHubEmbed(){
+  public void createGitHubEmbed() {
     this.event.getChannel().sendMessageEmbeds(new MessageEmbed(
         "https://github.com/RafaelFDS1",
         "Nosso Github!",

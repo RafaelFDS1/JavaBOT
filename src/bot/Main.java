@@ -15,9 +15,10 @@ public class Main {
               GatewayIntent.GUILD_MEMBERS)
           .build()
           .awaitReady();
+      login.addEventListener(new MessageListener());
     } catch(Exception ex) {
-      System.out.println("Exception");
+      ex.printStackTrace();
+      login.shutdownNow();
     }
-    login.addEventListener(new MessageListener());
   }
 }
