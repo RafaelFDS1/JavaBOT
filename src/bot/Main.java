@@ -7,6 +7,10 @@ import net.dv8tion.jda.api.requests.GatewayIntent;
 
 public class Main {
   private static JDA login;
+  public static JDA getLogin(){
+    JDA temp = login;
+    return temp;
+  }
   public static void main(String[] args) {
     try {
       login = JDABuilder.createDefault(args[0])
