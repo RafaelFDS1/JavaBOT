@@ -1,4 +1,4 @@
-package bot.commands.eventsResponse;
+package bot.commands.messageRecievedResponse;
 
 import net.dv8tion.jda.api.entities.EmbedType;
 import net.dv8tion.jda.api.entities.MessageEmbed;
@@ -8,17 +8,17 @@ import java.util.List;
 import static bot.Main.getLogin;
 import static bot.Main.prefix;
 
-public class EventEmbedResponses {
-  private MessageReceivedEvent event = null;
-  public EventEmbedResponses(MessageReceivedEvent event){
-    this.event = event;
+public class GuildMessageResponse {
+  private MessageReceivedEvent messageReceivedEvent = null;
+  public GuildMessageResponse(MessageReceivedEvent event){
+    this.messageReceivedEvent = event;
   }
   public MessageReceivedEvent getEvent() {
-    return this.event;
+    return this.messageReceivedEvent;
   }
 
   public void createGitHubEmbed() {
-    this.event.getChannel().sendMessageEmbeds(new MessageEmbed(
+    this.messageReceivedEvent.getChannel().sendMessageEmbeds(new MessageEmbed(
         "https://github.com/RafaelFDS1",
         "Nosso Github!",
         "Siga o nosso mestre **Rafael F.** no Github!",
@@ -44,7 +44,7 @@ public class EventEmbedResponses {
     )).queue();
   }
   public void createHelpEmbed(){
-    this.event.getChannel().sendMessageEmbeds(new MessageEmbed(
+    this.messageReceivedEvent.getChannel().sendMessageEmbeds(new MessageEmbed(
         null,
         "Você precisa de um help?",
         "**Aqui estou!\n\nAbaixo vou listar todos os meus comandos!**",
@@ -71,6 +71,6 @@ public class EventEmbedResponses {
                 "Envia todas as informações sobre o bot no dm! (Em desenvolvimento)",
                 false))
     )).queue();
-    this.event.getChannel().sendMessageFormat("Espero ter ajudado %s \uD83E\uDD17", this.event.getAuthor()).queue();
+    this.messageReceivedEvent.getChannel().sendMessageFormat("Espero ter ajudado %s \uD83E\uDD17", this.messageReceivedEvent.getMember()).queue();
   }
 }
