@@ -2,6 +2,7 @@ package bot.commands;
 
 import bot.commands.messageRecievedResponse.GuildMessageResponse;
 import bot.commands.messageRecievedResponse.MessageEventResponse;
+import bot.commands.slashInteractionsResponse.GenericResponse;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
@@ -24,8 +25,9 @@ public class EventListener extends ListenerAdapter {
 
   @Override
   public void onSlashCommandInteraction(SlashCommandInteractionEvent event) {
+    GenericResponse embedEvent = new GenericResponse(event);
     switch(event.getName()) {
-//      case "help" -> event.
+      case "help" -> embedEvent.helpResponse();
     }
   }
 }
