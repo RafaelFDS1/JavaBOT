@@ -24,4 +24,10 @@ public class EventListener extends ListenerAdapter {
     }
   }
 
+  @Override
+  public void onSlashCommandInteraction(SlashCommandInteractionEvent event) {
+    switch(event.getName()) {
+      case "help" -> event.reply("Wait a minute, I'll bring my help for you!").queue();
+    }
+  }
 }

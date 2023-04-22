@@ -26,6 +26,10 @@ public class Main {
       builder.setActivity(Activity.listening(prefix + "help"));
       login = builder.build().awaitReady();
       login.addEventListener(new EventListener());
+      login.updateCommands().addCommands(
+          Commands.slash("help","Sometimes we need some help"),
+          Commands.slash("ping", "Pong! It brings a info about my ping!")
+      ).queue();
     } catch(Exception ex) {
       ex.printStackTrace();
       login.shutdownNow();
