@@ -1,9 +1,8 @@
-package bot.commands.messageCommands.eventsResponse;
+package bot.commands.eventsResponse;
 
 import net.dv8tion.jda.api.entities.EmbedType;
 import net.dv8tion.jda.api.entities.MessageEmbed;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
-
 import java.time.OffsetDateTime;
 import java.util.List;
 
@@ -20,7 +19,6 @@ public class MessageEventResponse {
     this.event.getChannel().sendMessageFormat("Dá uma olhadinha no seu dm %s \uD83D\uDE09", this.event.getAuthor()).queue();
     this.event.getAuthor().openPrivateChannel().queue(channel -> {
       channel.sendMessage("Oi oi! Precisa de ajuda? Segue aqui tudo o que eu posso fazer!").queue();
-
       channel.sendMessageEmbeds(new MessageEmbed(
           "https://github.com/RafaelFDS1",
           "Nosso Github!",

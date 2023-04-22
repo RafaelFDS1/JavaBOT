@@ -1,4 +1,4 @@
-package bot.commands.messageCommands.eventsResponse;
+package bot.commands.eventsResponse;
 
 import net.dv8tion.jda.api.entities.EmbedType;
 import net.dv8tion.jda.api.entities.MessageEmbed;
@@ -6,7 +6,7 @@ import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import java.time.OffsetDateTime;
 import java.util.List;
 import static bot.Main.getLogin;
-import static bot.commands.messageCommands.MessageListener.getPrefix;
+import static bot.Main.prefix;
 
 public class EventEmbedResponses {
   private MessageReceivedEvent event = null;
@@ -59,15 +59,15 @@ public class EventEmbedResponses {
             "https://github.com/RafaelFDS1.png",
             "https://github.com/RafaelFDS1.png"),
         null,
-        List.of(new MessageEmbed.Field(getPrefix() + "github",
+        List.of(new MessageEmbed.Field(prefix + "github",
                 "Retorna todas as informações sobre o nosso github! Siga-nos para dar suporte no desenvolvimento!",
                 false),
             new MessageEmbed.Field(
-                getPrefix() + "help",
+                prefix + "help",
                 "Retorna essa mesnagem com todas as informações que você precisa!",
                 false),
             new MessageEmbed.Field(
-                getPrefix() + "help+",
+                prefix + "help+",
                 "Envia todas as informações sobre o bot no dm! (Em desenvolvimento)",
                 false))
     )).queue();
