@@ -1,6 +1,6 @@
 package bot.commands.messageCommands;
 
-import bot.commands.messageCommands.eventsResponse.EventEmbedResponses;
+import bot.commands.eventsResponse.EventEmbedResponses;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.jetbrains.annotations.NotNull;
