@@ -18,7 +18,6 @@ public class Main {
       login.addEventListener(new MessageListener());
     } catch(Exception ex) {
       ex.printStackTrace();
-      login.shutdownNow();
     }
   }
 }
