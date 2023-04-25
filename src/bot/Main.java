@@ -28,7 +28,8 @@ public class Main {
       login.addEventListener(new EventListener());
       login.updateCommands().addCommands(
           Commands.slash("help","Sometimes we need some help"),
-          Commands.slash("ping", "Pong! It brings a info about my ping!")
+          Commands.slash("ping", "Pong! It brings a info about my ping!"),
+          Commands.slash("help+","It gives a whole information about everything I can do!")
       ).queue();
     } catch(Exception ex) {
       ex.printStackTrace();
