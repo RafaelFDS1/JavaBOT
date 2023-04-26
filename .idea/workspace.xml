@@ -5,8 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9198a635-4e31-4949-9532-11cd29e2e93d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inject.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaBOT/bot/commands/messageRecievedResponse/MessageEventResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaBOT/bot/commands/slashInteractionsResponse/GenericResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaBOT/bot/database/ConnectDB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bot/commands/slashInteractionsResponse/GenericResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bot/database/ConnectDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaBOT.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaBOT.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaBOT/bot/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaBOT/bot/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaBOT/bot/commands/EventListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaBOT/bot/commands/EventListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaBOT/bot/commands/eventsResponse/EventEmbedResponses.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaBOT/bot/commands/messageRecievedResponse/GuildMessageResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaBOT/bot/commands/eventsResponse/MessageEventResponse.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bot/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bot/commands/messageCommands/MessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bot/commands/messageCommands/MessageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bot/commands/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bot/commands/EventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bot/commands/eventsResponse/EventEmbedResponses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bot/commands/messageRecievedResponse/GuildMessageResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bot/commands/eventsResponse/MessageEventResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bot/commands/messageRecievedResponse/MessageEventResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging dbBranch",
     "last_opened_file_path": "C:/Users/Aluno Tem/Documents/JavaBOT/JavaBOT",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -74,5 +91,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
