@@ -23,4 +23,4 @@ jobs:
         distribution: 'temurin'
         
     - name: Compilando java
-      run: javac -cp src src/bot/Main.java
+      run: javac -cp . bot/Main.java
