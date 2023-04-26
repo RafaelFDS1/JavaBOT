@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="net.dv8tion.JDA" level="project" />
+    <orderEntry type="library" exported="" name="postgresql" level="project" />
   </component>
 </module>
