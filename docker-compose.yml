@@ -1,0 +1,14 @@
+version: '1.0'
+
+services:
+
+  postgres:
+    image: postgres
+    volumes:
+      - ./inject.sql:/docker-entrypoint-initdb.d/inject.sql
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_DB: 'dbDiscordBot'
+      POSTGRES_PASSWORD: '1234'
+    ports:
+      - 5432:5432
