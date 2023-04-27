@@ -22,22 +22,19 @@ public class Main {
       System.out.println("Se esqueceu de incluir o TOKEN como argumento!");
       System.exit(1);
     }
-    ConnectDB cdb = new ConnectDB();
-    cdb.connect();
-    cdb.disconnect();
-//    try {
-//      builder = JDABuilder.createDefault(args[0])
-//          .enableIntents(GatewayIntent.MESSAGE_CONTENT, GatewayIntent.GUILD_PRESENCES, GatewayIntent.GUILD_MEMBERS);
-//      builder.setActivity(Activity.listening(prefix + "help"));
-//      login = builder.build().awaitReady();
-//      login.addEventListener(new EventListener());
-//      login.updateCommands().addCommands(
-//          Commands.slash("help","Sometimes we need some help"),
-//          Commands.slash("ping", "Pong! It brings a info about my ping!")
-//      ).queue();
-//    } catch(Exception ex) {
-//      ex.printStackTrace();
-//      login.shutdownNow();
-//    }
+    try {
+      builder = JDABuilder.createDefault(args[0])
+          .enableIntents(GatewayIntent.MESSAGE_CONTENT, GatewayIntent.GUILD_PRESENCES, GatewayIntent.GUILD_MEMBERS);
+      builder.setActivity(Activity.listening(prefix + "help"));
+      login = builder.build().awaitReady();
+      login.addEventListener(new EventListener());
+      login.updateCommands().addCommands(
+          Commands.slash("help","Sometimes we need some help"),
+          Commands.slash("ping", "Pong! It brings a info about my ping!")
+      ).queue();
+    } catch(Exception ex) {
+      ex.printStackTrace();
+      login.shutdownNow();
+    }
   }
 }
